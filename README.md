@@ -4,6 +4,8 @@
 
 *Note: Run on Windows 10 with Virtualbox. Running on MacOS Sierra (version 10) hasn't worked yet.*
 
+*Note: The prednet source code can be found at: https://github.com/coxlab/prednet.git.*
+
 ### Load docker
 
 https://www.docker.com/products/overview
