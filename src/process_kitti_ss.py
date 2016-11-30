@@ -10,14 +10,11 @@ import urllib
 import numpy as np
 from scipy.misc import imread, imresize
 import hickle as hkl
-from kitti_settings_ss import *
+#from kitti_settings_ss import *
 import pandas as pd
 import re
 
 desired_im_sz = (128, 160)
-categories = ['city', 'residential', 'road']
-
-if not os.path.exists(DATA_DIR): os.mkdir(DATA_DIR)
 
 # resize and crop image
 def process_im(im, desired_sz):
@@ -28,12 +25,12 @@ def process_im(im, desired_sz):
     return im
 
 split = 'test'
-suffix = '_Sc'
+suffix = '_Sd'
 im_list = []
 source_list = []  # corresponds to recording that image came from
 home = os.getcwd()
-#max_ex_per_file = 20
-#max_file = 108
+max_ex_per_file = 15
+max_file = 108
 max_ex_per_file = 2
 max_file = 10
 frames_per_ex =  10
