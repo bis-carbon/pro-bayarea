@@ -1,0 +1,41 @@
+part number: 1
+Model MSE: 0.001667
+Last Frame MSE: 0.000232Previous Frame MSE: 0.000224part number: 2
+Model MSE: 0.001586
+Last Frame MSE: 0.000222Previous Frame MSE: 0.000202part number: 3
+Model MSE: 0.001615
+Last Frame MSE: 0.000202Previous Frame MSE: 0.000176part number: 4
+Model MSE: 0.001554
+Last Frame MSE: 0.000172Previous Frame MSE: 0.000154part number: 5
+Model MSE: 0.001575
+Last Frame MSE: 0.000098Previous Frame MSE: 0.000091part number: 6
+Model MSE: 0.001744
+Last Frame MSE: 0.000179Previous Frame MSE: 0.000159part number: 7
+Model MSE: 0.001531
+Last Frame MSE: 0.000105Previous Frame MSE: 0.000093part number: 8
+Model MSE: 0.001697
+Last Frame MSE: 0.000085Previous Frame MSE: 0.000076part number: 9
+Model MSE: 0.001680
+Last Frame MSE: 0.000142Previous Frame MSE: 0.000113part number: 10
+Model MSE: 0.001653
+Last Frame MSE: 0.000120Previous Frame MSE: 0.000116part number: 11
+Model MSE: 0.001553
+Last Frame MSE: 0.000109Previous Frame MSE: 0.000102part number: 12
+Model MSE: 0.001231
+Last Frame MSE: 0.000071Previous Frame MSE: 0.000062part number: 13
+Model MSE: 0.000940
+Last Frame MSE: 0.000092Previous Frame MSE: 0.000072part number: 14
+Model MSE: 0.001079
+Last Frame MSE: 0.000201Previous Frame MSE: 0.000133part number: 15
+Model MSE: 0.000826
+Last Frame MSE: 0.000049Previous Frame MSE: 0.000038part number: 16
+Model MSE: 0.001357
+Last Frame MSE: 0.000166Previous Frame MSE: 0.000131part number: 17
+Model MSE: 0.001336
+Last Frame MSE: 0.000117Previous Frame MSE: 0.000099part number: 18
+Model MSE: 0.001322
+Last Frame MSE: 0.000103Previous Frame MSE: 0.000090part number: 19
+Model MSE: 0.001718
+Last Frame MSE: 0.000158Previous Frame MSE: 0.000126part number: 20
+Model MSE: 0.001257
+Last Frame MSE: 0.000067Previous Frame MSE: 0.000053
