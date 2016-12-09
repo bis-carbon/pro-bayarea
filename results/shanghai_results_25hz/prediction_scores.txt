@@ -1,0 +1,21 @@
+part number: 1
+Model MSE: 0.001547
+Last Frame MSE: 0.000235Previous Frame MSE: 0.000475part number: 2
+Model MSE: 0.001507
+Last Frame MSE: 0.000172Previous Frame MSE: 0.000368part number: 3
+Model MSE: 0.001635
+Last Frame MSE: 0.000164Previous Frame MSE: 0.000280part number: 4
+Model MSE: 0.001604
+Last Frame MSE: 0.000121Previous Frame MSE: 0.000189part number: 5
+Model MSE: 0.001652
+Last Frame MSE: 0.000165Previous Frame MSE: 0.000256part number: 6
+Model MSE: 0.001381
+Last Frame MSE: 0.000115Previous Frame MSE: 0.000183part number: 7
+Model MSE: 0.000941
+Last Frame MSE: 0.000100Previous Frame MSE: 0.000231part number: 8
+Model MSE: 0.001052
+Last Frame MSE: 0.000096Previous Frame MSE: 0.000190part number: 9
+Model MSE: 0.001281
+Last Frame MSE: 0.000097Previous Frame MSE: 0.000212part number: 10
+Model MSE: 0.001461
+Last Frame MSE: 0.000106Previous Frame MSE: 0.000199
