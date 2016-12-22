@@ -1,0 +1,7 @@
+part number: 1
+Model MSE: 0.007116
+Last Frame MSE: 0.007350Previous Frame MSE: 0.005739part number: 2
+Model MSE: 0.003641
+Last Frame MSE: 0.002471Previous Frame MSE: 0.003510part number: 3
+Model MSE: 0.002378
+Last Frame MSE: 0.001425Previous Frame MSE: 0.001492

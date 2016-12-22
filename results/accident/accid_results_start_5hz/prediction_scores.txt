@@ -1,0 +1,3 @@
+part number: 1
+Model MSE: 0.010650
+Last Frame MSE: 0.011592Previous Frame MSE: 0.010726
