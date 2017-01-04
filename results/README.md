@@ -14,7 +14,7 @@ the original prednet input. So, with 10 frames per clip, if we were to change th
 we would get a different number of clips for each 5-sec avi. For example, at 2 Hz, 5 seconds of one 
 avi yields just one clip. At 25 Hz, a 5-second avi yields up to 12.5 clips.
 
-The main result is the mean squared error (MSE) of the predicted and the actual frame, pixel-by-pixel,
+The main result is the mean squared error (MSE) between the predicted and the actual frame, pixel-by-pixel,
 and over the 3 color channels (RGB).
 
 The basic structure of the analysis is either by frame ('frame') or by clip ('overall'). The first 
