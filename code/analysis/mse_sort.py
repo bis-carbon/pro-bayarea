@@ -22,18 +22,20 @@ def process_im(im, desired_sz):
 
 
 #data_dir ='C:/Users/ibshi/Desktop/startup.ml/video_stuff/prednet-master/kitti_results_50hz/'
-res_dir ='./kitti_results_50hz/'
-data_dir ='./kitti_data_50hz/'
+res_dir ='./shanghai_results_50hz/'
+data_dir ='./shanghai_data_50hz/'
 prefix = 'mse_frame2_P20_' 
-suffix = '_50hz_high50'
+#suffix = '_50hz_high50'
+suffix = '_50hz_low50'
 parts = 20
 num_clips_per_avi = 20
 num_pred_frames_per_clip = 9 # remember, no prediction for first frame 
 num_frames_per_clip = 10
 os.chdir('C:/Users/ibshi/Desktop/startup.ml/video_stuff/prednet-master/')
+home = './'
 #num_pull = 2 #number of clips to pull
 num_pull = 50 #number of clips to pull
-high_mse = 1 # a flag to pull high MSE's (the worst fits) or low MSE's (the best fits)
+high_mse = 0 # a flag to pull high MSE's (the worst fits) or low MSE's (the best fits)
 desired_im_sz = (128, 160)
 split = 'test'
 frames_per_ex =  10
@@ -62,10 +64,11 @@ source_list = []
 
 for k in range(0,num_pull):
     curr_index = mse_sort.iloc[k].name
+    curr_MSE = mse_sort.iloc[k].MSE
     curr_source_ind = int(curr_index/num_clips_per_avi)
     curr_ex = curr_index % num_clips_per_avi
     new_source = avi_list.iloc[curr_source_ind]['avi_file']
-    print curr_source_ind, curr_ex
+    print curr_source_ind, curr_ex, curr_MSE
     for j in range(0,num_frames_per_clip):
         new_frame = './shanghai_png/image'+str(curr_source_ind+1)+'_'+str(frames_per_ex*(curr_ex)+j)+'.png'
         im_list = im_list + [new_frame]                                 
