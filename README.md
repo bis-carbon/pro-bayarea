@@ -2,9 +2,9 @@
 
 ## Instructions for loading and running prednet evaluation on their model and their data.
 
-Conceptual foundation of the model: [The PredNet Paper](https://arxiv.org/pdf/1605.08104v4.pdf)
+Conceptual foundation of the model: [the prednet paper](https://arxiv.org/pdf/1605.08104v4.pdf)
 
-The repository of PredNet source code: [https://github.com/coxlab/prednet.git](https://github.com/coxlab/prednet.git).
+The repository of prednet source code: [https://github.com/coxlab/prednet.git](https://github.com/coxlab/prednet.git).
 
 Some packages you might need to install before running the demo: Keras, Theano, imageio, hickle, six
 
