@@ -1,4 +1,4 @@
-test_avi
-test_results_avi
-model_data
-.ipynb_checkpoints
+**/test_avi/
+**/test_results_avi/
+**/model_data/
+**/.ipynb_checkpoints/
