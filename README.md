@@ -2,83 +2,38 @@
 
 ## Instructions for loading and running prednet evaluation on their model and their data.
 
-*Note: Run on Windows 10 with Virtualbox. Running on MacOS Sierra (version 10) hasn't worked yet.*
+Conceptual foundation of the model: [The PredNet Paper](https://arxiv.org/pdf/1605.08104v4.pdf)
 
-*Note: The prednet source code can be found at: https://github.com/coxlab/prednet.git.*
+The repository of PredNet source code: [https://github.com/coxlab/prednet.git](https://github.com/coxlab/prednet.git).
 
-### Load docker
+Some packages you might need to install before running the demo: Keras, Theano, imageio, hickle, six
 
-https://www.docker.com/products/overview
+## Analysis
 
-### Start Docker Quickstart Terminal
+### accident-demo
 
-*At this point, if you start VirtualBox, you should see a default machine corresponding to docker.
-Before running kitti_evaluate, I had to increase the virtual RAM to 2G (the default size is 1G)
-To do this, you will need to stop the default machine and change the settings in VirtualBox, and then 
-restart Docker Quickstart Terminal.*
+Run this notebook to test whether an avi has an accident. The first cell will ask for a frame
+rate and an avi. The frame rate should be either 2 or 5 (Hz).
 
-### Within docker ($ prompt):
+### hist_mse
 
-*This will pull the docker image*
+This script takes csv's with the frame MSE's and creates histograms, both overall (across clip)
+and by frame.
 
-$ docker pull keras/keras-notebook
+### kitti_evaluate-shanghai-all-plots and kitti_evaluate-shanghai-parts
 
-*This will give you the image id for keras-notebook for the docker run command*
+These run the pretrained prednet model on input hkl files. They are modifications of the
+original prednet code kitti-evaluate. -shanghai- all-plots creates plots for all the input 
+clips. -shanghai-parts runs the model through batches of hkl files.
 
-$ docker images
+### mse_hist_start
 
-*This will give you the ip for the jupyter notebook*
+This takes the accident videos and finds the MSE's for the first 3 frames of the accidents.
 
-$ docker-machine ip default
+### mse_sort
 
-*This will start the docker container*
-
-$ winpty docker run -p 8888:8888 -it \<image id\>
-
-*The container should start a jupyter notebook, at \<docker-machine ip default\>:8888. Naviagate your browser to this ip address.*
-
-*Bring up a terminal in jupyter notebook (upper right under 'New')*
-
-##In the container terminal (# prompt):
-
-*This will git clone the prednet source code*
-
-\# git clone https://github.com/coxlab/prednet.git
-
-\# cd prednet
-
-*This will run a shell to download the prednet pre-trained model*
-
-\# bash download_models.sh
-
-*This will download the prednet training and test sets, in hickle format*
-
-\# bash download_data.sh
-
-*This will install the hickle package. Be sure to use pip2 to get it into the right environment*
-
-\# pip2 install hickle
-
-*At this point, you should be able to run kitti_evaluate_py, pasted into a notebook. After running kitti_evaluate, 
-about 10 minutes,* 
-
-\# cd kitti_results
-
-*From here you can see a file called prediction_scores.txt* 
-
-*This will go to a folder with figures giving examples of the predictions for video segments.
-
-\# cd prediction_plots
-
-*The inputs were 10 frames. By default there is no prediction for the first frame.*
-
-##To retrieve the files, go to the docker quickstart terminal
-
-*This will give you the container nickname*
-
-$ docker ps
-
-$ docker cp \<container nickname\>:/home/jovyan/work/prednet/kitti_results \<your folder\>
+This takes the 50hz results for the Shanghai data and creates hkl files for the 50 clips with
+either the top or lowest MSE's. 
 
 
 
