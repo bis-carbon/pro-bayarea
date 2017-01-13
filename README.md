@@ -1,12 +1,32 @@
-# video
+# Predicting possible accidents in the videos.
 
-## Instructions for loading and running prednet evaluation on their model and their data.
+## Introduction.
 
 Conceptual foundation of the model: [the prednet paper](https://arxiv.org/pdf/1605.08104v4.pdf)
 
 The repository of prednet source code: [https://github.com/coxlab/prednet.git](https://github.com/coxlab/prednet.git).
 
-Some packages you might need to install before running the demo: Keras, Theano, imageio, hickle, six
+Some packages you might need to install before running the demo: Keras, Theano, imageio, hickle, six (Tested on Keras 1.0.7).
+
+Currently using pre-trained prednet model to run predictions, the model information can be conveniently downloaded by running `download_models.sh` in the prednet repository.
+
+The data flow:
+
+
+Video (a consistent video) 
+
+-> Sampled frames (using the sample frequency of 2Hz)
+
+-> Clip (ten frames per clip)
+
+-> PredNet (take clips as inputs)
+
+-> Prediction (make predictions based on previous frame)
+
+-> Error (subtract predicted frame from the real frame)
+
+-> Accident? (using the threshold calculated from the beginning of the video)
+             
 
 ## Analysis
 
