@@ -30,7 +30,7 @@ Video (a consistent video)
 
 ## Analysis
 
-### accident-demo
+### accident-test
 
 Run this notebook to test whether an avi has an accident. The first cell will ask for a frame
 rate and an avi. The frame rate should be either 2 or 5 (Hz).
