@@ -1,4 +1,4 @@
-# Predicting possible accidents in the videos.
+# Predicting possible accidents from videos.
 
 ## Introduction.
 
